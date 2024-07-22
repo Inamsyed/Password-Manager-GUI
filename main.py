@@ -59,7 +59,7 @@ def save():
 # ---------------------------- UI SETUP ------------------------------- #
 def find_password():
     website_name = web_entry.get()
-
+    # Error Handling
     try:
         with open("data.json", "r") as file:
             data = json.load(file)
